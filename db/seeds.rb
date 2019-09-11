@@ -13,7 +13,7 @@ threads = []
 # csv = CSV.new(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 # while row = csv.shift
 # end
-CSV.foreach('lib/seeds/Onliner.csv', :headers => true, :encoding => 'UTF-8') do |records|
+CSV.foreach('lib/seeds/Onliner1.csv', :headers => true, :encoding => 'UTF-8') do |records|
 	threads << Thread.new(records) do |row|
 		t = Product.new
 		t.kind = row['type']
