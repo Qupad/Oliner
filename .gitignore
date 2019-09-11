@@ -22,4 +22,10 @@
 
 .byebug_history
  
-lib/seeds/Onliner.csv
+
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+
+/lib/seeds/Onliner.csv
