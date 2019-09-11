@@ -16,7 +16,7 @@ threads = []
 CSV.foreach('lib/seeds/Onliner1.csv', :headers => true, :encoding => 'UTF-8') do |records|
 	threads << Thread.new(records) do |row|
 		t = Product.new
-		t.type = row['type']
+		t.kind = row['type']
 		t.name = row['name']
 		t.price = row['price']
 		t.description = row['description']
